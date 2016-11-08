@@ -16,6 +16,8 @@
   /* NOTE: Call the function that loads (or 'requests') our repo data.
     Pass in our view function as a higher order callback, so our repos
     will render AFTER the data is loaded. */
+
+
   repos.requestRepos(repoView.renderRepos);
 
   module.repoView = repoView;
