@@ -7,8 +7,6 @@
 
   Article.allArticles = [];
 
-  // TODO: Convert the model .toHTML method to a proper View method,
-  //  since it handles the presentation of the data:
 
   Article.createTable = function() {
     webDB.execute(
