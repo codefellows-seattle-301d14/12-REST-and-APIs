@@ -7,6 +7,7 @@
   repos.requestRepos = function(callback) {
     /* TODO: How would you like to fetch your repos? Someone say AJAX?!
       Do not forget to call the callback! */
+      // $.ajax()
   };
 
   repos.withTheAttribute = function(myAttr) {
