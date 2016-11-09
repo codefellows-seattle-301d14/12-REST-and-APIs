@@ -14,6 +14,8 @@
       url: 'https://api.github.com/users/dbecker4130/repos',
       success: function(data, message, xhr) {
         console.log(data);
+        repos.allRepos = data;
+        callback();
       }
     });
 
