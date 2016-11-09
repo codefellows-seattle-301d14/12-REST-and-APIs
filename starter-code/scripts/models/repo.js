@@ -11,7 +11,7 @@
     $.ajax({
       url:'https://api.github.com/users/julienawilson/repos',
       type:'GET',
-      headers:{'Authorization':'token '+'55bcbcd8e46e527095af4becad03c319df269e21'},
+      headers:{'Authorization':'token '+githubToken},
       success: function(data,message,xhr){
         repos.allRepos=data;
         callback(data);}
