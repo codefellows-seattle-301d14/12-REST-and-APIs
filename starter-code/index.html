@@ -35,12 +35,14 @@
     </script>
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
-        //TODO: Fill in our new template expressions!
+        <!-- //TODO: Fill in our new template expressions! -->
+        <!-- //values found here: https://api.github.com/users/codefellows-seattle-301d14/repos -->
+        <!-- //DONE -->
         <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-        <p>Description: {{}}</p>
-        <p>Primary Language: {{}}</p>
-        <p>Created: {{}}</p>
-        <p>Last updated: {{}}</p>
+        <p>Description: {{description}}</p>
+        <p>Primary Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
         {{#if watchers_count}}
           <p>{{watchers_count}} watching this repo</p>
         {{/if}}
@@ -126,6 +128,7 @@
 
     <!-- TODO: Include your secret GitHub token file, which should be gitingore'd,
       therefore recreated in every developer's environment. -->
+      <!-- DONE -->
       <script src="/githubToken.js"></script>
     <!-- Model files: -->
     <!-- TODO: Be sure to include any new model files: -->
@@ -133,9 +136,11 @@
     <script src="/scripts/models/repo.js"></script>
     <!-- View files: -->
     <!-- TODO: Be sure to include any new view files: -->
+    <!-- DONE -->
     <script src="/scripts/views/articleView.js"></script>
     <script src="/scripts/views/adminView.js"></script>
     <script src="/scripts/views/repoView.js"></script>
+    <script src="/scripts/views/newArticle.js"></script>
     <!-- Controller files: -->
     <script src="/scripts/controllers/articleController.js"></script>
     <script src="/scripts/controllers/aboutController.js"></script>
